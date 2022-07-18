@@ -1,0 +1,32 @@
+name:                magicarp-barbara-frp
+version:             0.1.0.0
+github:              "arnemileswinter/magicarp-barbara-frp"
+license:             MIT
+author:              "Arne Winter"
+maintainer:          "45700009+arnemileswinter@users.noreply.github.com"
+copyright:           "2022 Arne Winter"
+
+extra-source-files:
+- README.md
+
+description:         Please see the README on GitHub at <https://github.com/arnemileswinter/magicarp-barbara-frp#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- random
+- reactive-banana
+- termbox-banana
+
+library:
+  source-dirs: src
+
+executables:
+  magicarp-barbara-frp-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - magicarp-barbara-frp

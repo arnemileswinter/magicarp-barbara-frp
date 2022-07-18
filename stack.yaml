@@ -1,0 +1,8 @@
+resolver:
+  url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/19/15.yaml
+packages:
+- .
+
+extra-deps:
+  - reactive-banana-1.3.0.0
+  - termbox-banana-0.3.0
